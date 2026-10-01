@@ -1,0 +1,1584 @@
+{
+  "cases": [
+    {
+      "label": "defaults",
+      "data": {
+        "species": [
+          {
+            "scientific_name": "Genus species0",
+            "common_name": "Bird 0",
+            "species_code": "bird0",
+            "count": 500,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species1",
+            "common_name": "Bird 1",
+            "species_code": "bird1",
+            "count": 493,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.78,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species2",
+            "common_name": "Bird 2",
+            "species_code": "bird2",
+            "count": 486,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.77,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species3",
+            "common_name": "Bird 3",
+            "species_code": "bird3",
+            "count": 479,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.76,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species4",
+            "common_name": "Bird 4",
+            "species_code": "bird4",
+            "count": 472,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.75,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species5",
+            "common_name": "Bird 5",
+            "species_code": "bird5",
+            "count": 465,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.74,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species6",
+            "common_name": "Bird 6",
+            "species_code": "bird6",
+            "count": 458,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.73,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species7",
+            "common_name": "Bird 7",
+            "species_code": "bird7",
+            "count": 451,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.72,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species8",
+            "common_name": "Bird 8",
+            "species_code": "bird8",
+            "count": 444,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.7100000000000001,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species9",
+            "common_name": "Bird 9",
+            "species_code": "bird9",
+            "count": 437,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.7000000000000001,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          }
+        ]
+      },
+      "options": {}
+    },
+    {
+      "label": "three rows",
+      "data": {
+        "species": [
+          {
+            "scientific_name": "Genus species0",
+            "common_name": "Bird 0",
+            "species_code": "bird0",
+            "count": 500,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species1",
+            "common_name": "Bird 1",
+            "species_code": "bird1",
+            "count": 493,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.78,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species2",
+            "common_name": "Bird 2",
+            "species_code": "bird2",
+            "count": 486,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.77,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species3",
+            "common_name": "Bird 3",
+            "species_code": "bird3",
+            "count": 479,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.76,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species4",
+            "common_name": "Bird 4",
+            "species_code": "bird4",
+            "count": 472,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.75,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species5",
+            "common_name": "Bird 5",
+            "species_code": "bird5",
+            "count": 465,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.74,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species6",
+            "common_name": "Bird 6",
+            "species_code": "bird6",
+            "count": 458,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.73,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species7",
+            "common_name": "Bird 7",
+            "species_code": "bird7",
+            "count": 451,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.72,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species8",
+            "common_name": "Bird 8",
+            "species_code": "bird8",
+            "count": 444,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.7100000000000001,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species9",
+            "common_name": "Bird 9",
+            "species_code": "bird9",
+            "count": 437,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.7000000000000001,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          }
+        ]
+      },
+      "options": {
+        "rowLimit": "3"
+      }
+    },
+    {
+      "label": "every column on",
+      "data": {
+        "species": [
+          {
+            "scientific_name": "Genus species0",
+            "common_name": "Bird 0",
+            "species_code": "bird0",
+            "count": 500,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species1",
+            "common_name": "Bird 1",
+            "species_code": "bird1",
+            "count": 493,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.78,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species2",
+            "common_name": "Bird 2",
+            "species_code": "bird2",
+            "count": 486,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.77,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species3",
+            "common_name": "Bird 3",
+            "species_code": "bird3",
+            "count": 479,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.76,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species4",
+            "common_name": "Bird 4",
+            "species_code": "bird4",
+            "count": 472,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.75,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species5",
+            "common_name": "Bird 5",
+            "species_code": "bird5",
+            "count": 465,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.74,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species6",
+            "common_name": "Bird 6",
+            "species_code": "bird6",
+            "count": 458,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.73,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species7",
+            "common_name": "Bird 7",
+            "species_code": "bird7",
+            "count": 451,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.72,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species8",
+            "common_name": "Bird 8",
+            "species_code": "bird8",
+            "count": 444,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.7100000000000001,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species9",
+            "common_name": "Bird 9",
+            "species_code": "bird9",
+            "count": 437,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.7000000000000001,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          }
+        ]
+      },
+      "options": {
+        "showLastHeard": true,
+        "showConfidence": true
+      }
+    },
+    {
+      "label": "names only",
+      "data": {
+        "species": [
+          {
+            "scientific_name": "Genus species0",
+            "common_name": "Bird 0",
+            "species_code": "bird0",
+            "count": 500,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species1",
+            "common_name": "Bird 1",
+            "species_code": "bird1",
+            "count": 493,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.78,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species2",
+            "common_name": "Bird 2",
+            "species_code": "bird2",
+            "count": 486,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.77,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species3",
+            "common_name": "Bird 3",
+            "species_code": "bird3",
+            "count": 479,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.76,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species4",
+            "common_name": "Bird 4",
+            "species_code": "bird4",
+            "count": 472,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.75,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species5",
+            "common_name": "Bird 5",
+            "species_code": "bird5",
+            "count": 465,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.74,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species6",
+            "common_name": "Bird 6",
+            "species_code": "bird6",
+            "count": 458,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.73,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species7",
+            "common_name": "Bird 7",
+            "species_code": "bird7",
+            "count": 451,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.72,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species8",
+            "common_name": "Bird 8",
+            "species_code": "bird8",
+            "count": 444,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.7100000000000001,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species9",
+            "common_name": "Bird 9",
+            "species_code": "bird9",
+            "count": 437,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.7000000000000001,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          }
+        ]
+      },
+      "options": {
+        "showCount": false
+      }
+    },
+    {
+      "label": "scientific names",
+      "data": {
+        "species": [
+          {
+            "scientific_name": "Genus species0",
+            "common_name": "Bird 0",
+            "species_code": "bird0",
+            "count": 500,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species1",
+            "common_name": "Bird 1",
+            "species_code": "bird1",
+            "count": 493,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.78,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species2",
+            "common_name": "Bird 2",
+            "species_code": "bird2",
+            "count": 486,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.77,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species3",
+            "common_name": "Bird 3",
+            "species_code": "bird3",
+            "count": 479,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.76,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species4",
+            "common_name": "Bird 4",
+            "species_code": "bird4",
+            "count": 472,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.75,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species5",
+            "common_name": "Bird 5",
+            "species_code": "bird5",
+            "count": 465,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.74,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species6",
+            "common_name": "Bird 6",
+            "species_code": "bird6",
+            "count": 458,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.73,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species7",
+            "common_name": "Bird 7",
+            "species_code": "bird7",
+            "count": 451,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.72,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species8",
+            "common_name": "Bird 8",
+            "species_code": "bird8",
+            "count": 444,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.7100000000000001,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species9",
+            "common_name": "Bird 9",
+            "species_code": "bird9",
+            "count": 437,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.7000000000000001,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          }
+        ]
+      },
+      "options": {
+        "useScientificName": true
+      }
+    },
+    {
+      "label": "plain, roomy, medium",
+      "data": {
+        "species": [
+          {
+            "scientific_name": "Genus species0",
+            "common_name": "Bird 0",
+            "species_code": "bird0",
+            "count": 500,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species1",
+            "common_name": "Bird 1",
+            "species_code": "bird1",
+            "count": 493,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.78,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species2",
+            "common_name": "Bird 2",
+            "species_code": "bird2",
+            "count": 486,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.77,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species3",
+            "common_name": "Bird 3",
+            "species_code": "bird3",
+            "count": 479,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.76,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species4",
+            "common_name": "Bird 4",
+            "species_code": "bird4",
+            "count": 472,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.75,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species5",
+            "common_name": "Bird 5",
+            "species_code": "bird5",
+            "count": 465,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.74,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species6",
+            "common_name": "Bird 6",
+            "species_code": "bird6",
+            "count": 458,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.73,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species7",
+            "common_name": "Bird 7",
+            "species_code": "bird7",
+            "count": 451,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.72,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species8",
+            "common_name": "Bird 8",
+            "species_code": "bird8",
+            "count": 444,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.7100000000000001,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species9",
+            "common_name": "Bird 9",
+            "species_code": "bird9",
+            "count": 437,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.7000000000000001,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          }
+        ]
+      },
+      "options": {
+        "striped": false,
+        "tableBorder": false,
+        "density": "md",
+        "fontSize": "md"
+      }
+    },
+    {
+      "label": "empty species list",
+      "data": {
+        "species": []
+      },
+      "options": {}
+    },
+    {
+      "label": "missing last_heard",
+      "data": {
+        "species": [
+          {
+            "scientific_name": "Genus species0",
+            "common_name": "Bird 0",
+            "species_code": "bird0",
+            "count": 500,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": null,
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          }
+        ]
+      },
+      "options": {
+        "showLastHeard": true
+      }
+    },
+    {
+      "label": "fewer rows than the limit",
+      "data": {
+        "species": [
+          {
+            "scientific_name": "Genus species0",
+            "common_name": "Bird 0",
+            "species_code": "bird0",
+            "count": 500,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species1",
+            "common_name": "Bird 1",
+            "species_code": "bird1",
+            "count": 493,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.78,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          }
+        ]
+      },
+      "options": {
+        "rowLimit": "10"
+      }
+    },
+    {
+      "label": "no outer padding",
+      "data": {
+        "species": [
+          {
+            "scientific_name": "Genus species0",
+            "common_name": "Bird 0",
+            "species_code": "bird0",
+            "count": 500,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species1",
+            "common_name": "Bird 1",
+            "species_code": "bird1",
+            "count": 493,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.78,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species2",
+            "common_name": "Bird 2",
+            "species_code": "bird2",
+            "count": 486,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.77,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species3",
+            "common_name": "Bird 3",
+            "species_code": "bird3",
+            "count": 479,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.76,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species4",
+            "common_name": "Bird 4",
+            "species_code": "bird4",
+            "count": 472,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.75,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species5",
+            "common_name": "Bird 5",
+            "species_code": "bird5",
+            "count": 465,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.74,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species6",
+            "common_name": "Bird 6",
+            "species_code": "bird6",
+            "count": 458,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.73,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species7",
+            "common_name": "Bird 7",
+            "species_code": "bird7",
+            "count": 451,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.72,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species8",
+            "common_name": "Bird 8",
+            "species_code": "bird8",
+            "count": 444,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.7100000000000001,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species9",
+            "common_name": "Bird 9",
+            "species_code": "bird9",
+            "count": 437,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.7000000000000001,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          }
+        ]
+      },
+      "options": {
+        "outerPadding": "0"
+      }
+    },
+    {
+      "label": "roomy padding",
+      "data": {
+        "species": [
+          {
+            "scientific_name": "Genus species0",
+            "common_name": "Bird 0",
+            "species_code": "bird0",
+            "count": 500,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species1",
+            "common_name": "Bird 1",
+            "species_code": "bird1",
+            "count": 493,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.78,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species2",
+            "common_name": "Bird 2",
+            "species_code": "bird2",
+            "count": 486,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.77,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species3",
+            "common_name": "Bird 3",
+            "species_code": "bird3",
+            "count": 479,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.76,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species4",
+            "common_name": "Bird 4",
+            "species_code": "bird4",
+            "count": 472,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.75,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species5",
+            "common_name": "Bird 5",
+            "species_code": "bird5",
+            "count": 465,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.74,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species6",
+            "common_name": "Bird 6",
+            "species_code": "bird6",
+            "count": 458,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.73,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species7",
+            "common_name": "Bird 7",
+            "species_code": "bird7",
+            "count": 451,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.72,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species8",
+            "common_name": "Bird 8",
+            "species_code": "bird8",
+            "count": 444,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.7100000000000001,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species9",
+            "common_name": "Bird 9",
+            "species_code": "bird9",
+            "count": 437,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.7000000000000001,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          }
+        ]
+      },
+      "options": {
+        "outerPadding": "md"
+      }
+    },
+    {
+      "label": "padded, borderless",
+      "data": {
+        "species": [
+          {
+            "scientific_name": "Genus species0",
+            "common_name": "Bird 0",
+            "species_code": "bird0",
+            "count": 500,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species1",
+            "common_name": "Bird 1",
+            "species_code": "bird1",
+            "count": 493,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.78,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species2",
+            "common_name": "Bird 2",
+            "species_code": "bird2",
+            "count": 486,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.77,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species3",
+            "common_name": "Bird 3",
+            "species_code": "bird3",
+            "count": 479,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.76,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species4",
+            "common_name": "Bird 4",
+            "species_code": "bird4",
+            "count": 472,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.75,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species5",
+            "common_name": "Bird 5",
+            "species_code": "bird5",
+            "count": 465,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.74,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species6",
+            "common_name": "Bird 6",
+            "species_code": "bird6",
+            "count": 458,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.73,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species7",
+            "common_name": "Bird 7",
+            "species_code": "bird7",
+            "count": 451,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.72,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species8",
+            "common_name": "Bird 8",
+            "species_code": "bird8",
+            "count": 444,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.7100000000000001,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          },
+          {
+            "scientific_name": "Genus species9",
+            "common_name": "Bird 9",
+            "species_code": "bird9",
+            "count": 437,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.7000000000000001,
+            "max_confidence": 1,
+            "thumbnail_url": "/api/v2/media/image/x"
+          }
+        ]
+      },
+      "options": {
+        "outerPadding": "sm",
+        "tableBorder": false
+      }
+    },
+    {
+      "label": "rarest first",
+      "data": {
+        "species": [
+          {
+            "scientific_name": "Genus species0",
+            "common_name": "Bird 0",
+            "species_code": "bird0",
+            "count": 467,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/x"
+          },
+          {
+            "scientific_name": "Genus species1",
+            "common_name": "Bird 1",
+            "species_code": "bird1",
+            "count": 224,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/x"
+          },
+          {
+            "scientific_name": "Genus species2",
+            "common_name": "Bird 2",
+            "species_code": "bird2",
+            "count": 184,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/x"
+          },
+          {
+            "scientific_name": "Genus species3",
+            "common_name": "Zebra Finch",
+            "species_code": "bird3",
+            "count": 1,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/x"
+          },
+          {
+            "scientific_name": "Genus species4",
+            "common_name": "Anna's Hummingbird",
+            "species_code": "bird4",
+            "count": 1,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/x"
+          },
+          {
+            "scientific_name": "Genus species5",
+            "common_name": "Bushtit",
+            "species_code": "bird5",
+            "count": 1,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/x"
+          },
+          {
+            "scientific_name": "Genus species6",
+            "common_name": "Wrentit",
+            "species_code": "bird6",
+            "count": 1,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/x"
+          },
+          {
+            "scientific_name": "Genus species7",
+            "common_name": "Bird 7",
+            "species_code": "bird7",
+            "count": 2,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/x"
+          }
+        ]
+      },
+      "options": {
+        "sortOrder": "asc"
+      }
+    },
+    {
+      "label": "rarest first, top 3",
+      "data": {
+        "species": [
+          {
+            "scientific_name": "Genus species0",
+            "common_name": "Bird 0",
+            "species_code": "bird0",
+            "count": 467,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/x"
+          },
+          {
+            "scientific_name": "Genus species1",
+            "common_name": "Bird 1",
+            "species_code": "bird1",
+            "count": 224,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/x"
+          },
+          {
+            "scientific_name": "Genus species2",
+            "common_name": "Bird 2",
+            "species_code": "bird2",
+            "count": 184,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/x"
+          },
+          {
+            "scientific_name": "Genus species3",
+            "common_name": "Zebra Finch",
+            "species_code": "bird3",
+            "count": 1,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/x"
+          },
+          {
+            "scientific_name": "Genus species4",
+            "common_name": "Anna's Hummingbird",
+            "species_code": "bird4",
+            "count": 1,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/x"
+          },
+          {
+            "scientific_name": "Genus species5",
+            "common_name": "Bushtit",
+            "species_code": "bird5",
+            "count": 1,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/x"
+          },
+          {
+            "scientific_name": "Genus species6",
+            "common_name": "Wrentit",
+            "species_code": "bird6",
+            "count": 1,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/x"
+          },
+          {
+            "scientific_name": "Genus species7",
+            "common_name": "Bird 7",
+            "species_code": "bird7",
+            "count": 2,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/x"
+          }
+        ]
+      },
+      "options": {
+        "sortOrder": "asc",
+        "rowLimit": "3"
+      }
+    },
+    {
+      "label": "most first, same data",
+      "data": {
+        "species": [
+          {
+            "scientific_name": "Genus species0",
+            "common_name": "Bird 0",
+            "species_code": "bird0",
+            "count": 467,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/x"
+          },
+          {
+            "scientific_name": "Genus species1",
+            "common_name": "Bird 1",
+            "species_code": "bird1",
+            "count": 224,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/x"
+          },
+          {
+            "scientific_name": "Genus species2",
+            "common_name": "Bird 2",
+            "species_code": "bird2",
+            "count": 184,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/x"
+          },
+          {
+            "scientific_name": "Genus species3",
+            "common_name": "Zebra Finch",
+            "species_code": "bird3",
+            "count": 1,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/x"
+          },
+          {
+            "scientific_name": "Genus species4",
+            "common_name": "Anna's Hummingbird",
+            "species_code": "bird4",
+            "count": 1,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/x"
+          },
+          {
+            "scientific_name": "Genus species5",
+            "common_name": "Bushtit",
+            "species_code": "bird5",
+            "count": 1,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/x"
+          },
+          {
+            "scientific_name": "Genus species6",
+            "common_name": "Wrentit",
+            "species_code": "bird6",
+            "count": 1,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/x"
+          },
+          {
+            "scientific_name": "Genus species7",
+            "common_name": "Bird 7",
+            "species_code": "bird7",
+            "count": 2,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/x"
+          }
+        ]
+      },
+      "options": {
+        "sortOrder": "desc"
+      }
+    },
+    {
+      "label": "ties broken by name",
+      "data": {
+        "species": [
+          {
+            "scientific_name": "Genus species1",
+            "common_name": "Wrentit",
+            "species_code": "bird1",
+            "count": 1,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/x"
+          },
+          {
+            "scientific_name": "Genus species2",
+            "common_name": "Anna's Hummingbird",
+            "species_code": "bird2",
+            "count": 1,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/x"
+          },
+          {
+            "scientific_name": "Genus species3",
+            "common_name": "Bushtit",
+            "species_code": "bird3",
+            "count": 1,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/x"
+          }
+        ]
+      },
+      "options": {
+        "sortOrder": "asc"
+      }
+    },
+    {
+      "label": "rarest with counts hidden",
+      "data": {
+        "species": [
+          {
+            "scientific_name": "Genus species0",
+            "common_name": "Bird 0",
+            "species_code": "bird0",
+            "count": 467,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/x"
+          },
+          {
+            "scientific_name": "Genus species1",
+            "common_name": "Bird 1",
+            "species_code": "bird1",
+            "count": 224,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/x"
+          },
+          {
+            "scientific_name": "Genus species2",
+            "common_name": "Bird 2",
+            "species_code": "bird2",
+            "count": 184,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/x"
+          },
+          {
+            "scientific_name": "Genus species3",
+            "common_name": "Zebra Finch",
+            "species_code": "bird3",
+            "count": 1,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/x"
+          },
+          {
+            "scientific_name": "Genus species4",
+            "common_name": "Anna's Hummingbird",
+            "species_code": "bird4",
+            "count": 1,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/x"
+          },
+          {
+            "scientific_name": "Genus species5",
+            "common_name": "Bushtit",
+            "species_code": "bird5",
+            "count": 1,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/x"
+          },
+          {
+            "scientific_name": "Genus species6",
+            "common_name": "Wrentit",
+            "species_code": "bird6",
+            "count": 1,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/x"
+          },
+          {
+            "scientific_name": "Genus species7",
+            "common_name": "Bird 7",
+            "species_code": "bird7",
+            "count": 2,
+            "first_heard": "2026-09-21T07:36:42-07:00",
+            "last_heard": "2026-09-25T18:27:17-07:00",
+            "avg_confidence": 0.79,
+            "max_confidence": 1,
+            "thumbnail_url": "/x"
+          }
+        ]
+      },
+      "options": {
+        "sortOrder": "asc",
+        "showCount": false
+      }
+    }
+  ]
+}

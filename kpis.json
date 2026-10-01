@@ -1,0 +1,410 @@
+{
+  "$schema": "homarr-custom-widget-v2",
+  "name": "BirdNET KPIs",
+  "description": "Lifetime, today's and newly heard species, detections today, best day and current streak from BirdNET-Go, with optional app squares linking the stations.",
+  "sources": {
+    "default": {
+      "name": "BirdNET-Go",
+      "baseUrl": "http://birdnet-go.local:8080",
+      "networkScope": "private",
+      "auth": "none"
+    },
+    "homarr": {
+      "name": "This Homarr instance",
+      "baseUrl": "http://127.0.0.1:7575",
+      "networkScope": "loopback",
+      "auth": {
+        "type": "apiKeyHeader",
+        "name": "ApiKey"
+      }
+    }
+  },
+  "requests": {
+    "kpis": {
+      "path": "/api/v2/dashboard/kpis",
+      "kind": "query",
+      "method": "GET",
+      "trigger": "load",
+      "cacheSeconds": 60
+    },
+    "summary": {
+      "path": "/api/v2/analytics/species/summary",
+      "kind": "query",
+      "method": "GET",
+      "trigger": "load",
+      "query": {
+        "limit": 100
+      },
+      "cacheSeconds": 60
+    },
+    "apps": {
+      "source": "homarr",
+      "path": "/api/apps",
+      "kind": "query",
+      "method": "GET",
+      "trigger": "load",
+      "cacheSeconds": 300
+    }
+  },
+  "options": {
+    "showLifetime": {
+      "label": "Show species (lifetime)",
+      "description": "Total distinct species ever identified. The one number that only grows, and the reason this widget reads BirdNET's own API rather than Prometheus, whose counters reset on restart.",
+      "control": "switch",
+      "default": true
+    },
+    "showSpeciesToday": {
+      "label": "Show species (today)",
+      "description": "How many distinct species have been heard so far today. Counted from the species summary by last-heard date, in the browser's time zone.",
+      "control": "switch",
+      "default": true
+    },
+    "showNewToday": {
+      "label": "Show species (new today)",
+      "description": "Species heard today for the first time ever. Counted from the species summary by first-heard date, so a bird first heard yesterday is not new today.",
+      "control": "switch",
+      "default": true
+    },
+    "showToday": {
+      "label": "Show detections today",
+      "description": "How many detections so far today. Resets at midnight, so an early-morning tile often reads 0.",
+      "control": "switch",
+      "default": true
+    },
+    "showBestDay": {
+      "label": "Show best day",
+      "description": "The highest single-day detection count, with its date underneath when captions are on.",
+      "control": "switch",
+      "default": true
+    },
+    "showStreak": {
+      "label": "Show streak",
+      "description": "Consecutive days with at least one detection, with the date it started underneath when captions are on.",
+      "control": "switch",
+      "default": true
+    },
+    "showTodayCombined": {
+      "label": "Show today, combined",
+      "description": "One card headed Today with both numbers side by side: species heard today and detections today, each with its unit. While it is on, the two separate Today cards are hidden whatever their own switches say, which frees a slot for Best day or Streak.",
+      "control": "switch",
+      "default": false
+    },
+    "showSubCaptions": {
+      "label": "Show the small captions",
+      "description": "The date under Best day and the start date under Streak. Off leaves just the numbers, which suits a short tile. Does nothing if both of those stats are hidden.",
+      "control": "switch",
+      "default": true
+    },
+    "labelLifetime": {
+      "label": "Label: species (lifetime)",
+      "description": "Text above the lifetime species number. Clear the field to go back to the default.",
+      "control": "text",
+      "default": "Lifetime"
+    },
+    "unitLifetime": {
+      "label": "Unit: species (lifetime)",
+      "description": "The word shown after the number, small and dimmed, so the card reads as a quantity of something. Blank hides it.",
+      "control": "text",
+      "default": "species"
+    },
+    "labelSpeciesToday": {
+      "label": "Label: species (today)",
+      "description": "Text above today's species count. Clear the field to go back to the default.",
+      "control": "text",
+      "default": "Today"
+    },
+    "unitSpeciesToday": {
+      "label": "Unit: species (today)",
+      "description": "The word shown after the number, small and dimmed, so the card reads as a quantity of something. Blank hides it.",
+      "control": "text",
+      "default": "species"
+    },
+    "labelNewToday": {
+      "label": "Label: species (new today)",
+      "description": "Text above the new-today species count. Clear the field to go back to the default.",
+      "control": "text",
+      "default": "New today"
+    },
+    "unitNewToday": {
+      "label": "Unit: species (new today)",
+      "description": "The word shown after the number, small and dimmed, so the card reads as a quantity of something. Blank hides it.",
+      "control": "text",
+      "default": "species"
+    },
+    "labelToday": {
+      "label": "Label: detections today",
+      "description": "Text above today's detection count. Clear the field to go back to the default.",
+      "control": "text",
+      "default": "Today"
+    },
+    "unitToday": {
+      "label": "Unit: detections today",
+      "description": "The word shown after the number, small and dimmed, so the card reads as a quantity of something. Blank hides it.",
+      "control": "text",
+      "default": "detections"
+    },
+    "labelBestDay": {
+      "label": "Label: best day",
+      "description": "Text above the best-day count. Clear the field to go back to the default.",
+      "control": "text",
+      "default": "Best day"
+    },
+    "unitBestDay": {
+      "label": "Unit: best day",
+      "description": "The word shown after the number, small and dimmed, so the card reads as a quantity of something. Blank hides it.",
+      "control": "text",
+      "default": "detections"
+    },
+    "labelStreak": {
+      "label": "Label: streak",
+      "description": "Text above the streak. Clear the field to go back to the default.",
+      "control": "text",
+      "default": "Streak"
+    },
+    "labelTodayCombined": {
+      "label": "Label: today, combined",
+      "description": "Heading of the combined card.",
+      "control": "text",
+      "default": "Today"
+    },
+    "unitStreak": {
+      "label": "Unit: streak",
+      "description": "The word shown after the number, small and dimmed, so the card reads as a quantity of something. Blank hides it.",
+      "control": "text",
+      "default": "days"
+    },
+    "appCategory": {
+      "label": "App squares: category",
+      "description": "A keyword from the Description field of your Homarr apps, the same tagging the tagged-apps widget uses. Every app carrying it becomes a square after the stats, with its icon and name, linking to the app. Meant for the BirdNET station or stations behind these numbers. Leave blank for no squares.",
+      "control": "text",
+      "default": ""
+    },
+    "appLabel": {
+      "label": "App squares: label",
+      "description": "A label above each app square, styled like the count labels and following the label alignment. Blank, the default, shows none.",
+      "control": "text",
+      "default": ""
+    },
+    "showAppName": {
+      "label": "App squares: show the name",
+      "description": "The app's name under its icon. Off leaves just the icon, which suits a small square.",
+      "control": "switch",
+      "default": true
+    },
+    "appOpenInNewTab": {
+      "label": "App squares: open in a new tab",
+      "description": "Off opens the app in this tab, replacing the dashboard.",
+      "control": "switch",
+      "default": true
+    },
+    "showAppLinkIcon": {
+      "label": "App squares: mark links that open a new tab",
+      "description": "A small external-link glyph beside the name, the same one tagged-apps uses. Only shows while opening in a new tab is on and the app has a link.",
+      "control": "switch",
+      "default": false
+    },
+    "columns": {
+      "label": "Columns",
+      "description": "How many cards sit side by side. Two suits a square tile; one suits a tall narrow tile; three or four put more on a row and need the width to match.",
+      "control": "select",
+      "default": "2",
+      "choices": [
+        {
+          "label": "1",
+          "value": "1"
+        },
+        {
+          "label": "2",
+          "value": "2"
+        },
+        {
+          "label": "3",
+          "value": "3"
+        },
+        {
+          "label": "4",
+          "value": "4"
+        }
+      ]
+    },
+    "outerPadding": {
+      "label": "Padding around the grid",
+      "description": "Space between the cards and the edge of the tile. Without this the cards sit flush against the tile border, since the gap setting only separates the cards from each other.",
+      "control": "select",
+      "default": "xs",
+      "choices": [
+        {
+          "label": "None",
+          "value": "0"
+        },
+        {
+          "label": "Extra small",
+          "value": "xs"
+        },
+        {
+          "label": "Small",
+          "value": "sm"
+        },
+        {
+          "label": "Medium",
+          "value": "md"
+        }
+      ]
+    },
+    "gap": {
+      "label": "Gap between cards",
+      "description": "Space between the cards themselves, horizontally and vertically.",
+      "control": "select",
+      "default": "xs",
+      "choices": [
+        {
+          "label": "None",
+          "value": "0"
+        },
+        {
+          "label": "Extra small",
+          "value": "xs"
+        },
+        {
+          "label": "Small",
+          "value": "sm"
+        },
+        {
+          "label": "Medium",
+          "value": "md"
+        }
+      ]
+    },
+    "cardBorder": {
+      "label": "Card borders",
+      "description": "Outline each stat. Off gives a flatter look that leans on the board's own background.",
+      "control": "switch",
+      "default": true
+    },
+    "radius": {
+      "label": "Corner rounding",
+      "description": "Corner radius of each card.",
+      "control": "select",
+      "default": "md",
+      "choices": [
+        {
+          "label": "Square",
+          "value": "0"
+        },
+        {
+          "label": "Small",
+          "value": "sm"
+        },
+        {
+          "label": "Medium",
+          "value": "md"
+        },
+        {
+          "label": "Large",
+          "value": "lg"
+        }
+      ]
+    },
+    "padding": {
+      "label": "Card padding",
+      "description": "Space inside each card. Smaller fits more into a short tile.",
+      "control": "select",
+      "default": "xs",
+      "choices": [
+        {
+          "label": "Extra small",
+          "value": "xs"
+        },
+        {
+          "label": "Small",
+          "value": "sm"
+        },
+        {
+          "label": "Medium",
+          "value": "md"
+        }
+      ]
+    },
+    "valueSize": {
+      "label": "Number size",
+      "description": "Size of the big number, 1 being largest. Drop to 4 or 5 when showing four columns.",
+      "control": "select",
+      "default": "3",
+      "choices": [
+        {
+          "label": "1 largest",
+          "value": "1"
+        },
+        {
+          "label": "2",
+          "value": "2"
+        },
+        {
+          "label": "3",
+          "value": "3"
+        },
+        {
+          "label": "4",
+          "value": "4"
+        },
+        {
+          "label": "5 smallest",
+          "value": "5"
+        }
+      ]
+    },
+    "valueAlign": {
+      "label": "Number alignment",
+      "description": "Where the number and its unit sit across the card. The label above stays at the left.",
+      "control": "select",
+      "default": "center",
+      "choices": [
+        {
+          "label": "Left",
+          "value": "left"
+        },
+        {
+          "label": "Centre",
+          "value": "center"
+        },
+        {
+          "label": "Right",
+          "value": "right"
+        }
+      ]
+    },
+    "labelAlign": {
+      "label": "Label alignment",
+      "description": "Where the label above the number sits, and the small captions under Best day and Streak with it.",
+      "control": "select",
+      "default": "left",
+      "choices": [
+        {
+          "label": "Left",
+          "value": "left"
+        },
+        {
+          "label": "Centre",
+          "value": "center"
+        },
+        {
+          "label": "Right",
+          "value": "right"
+        }
+      ]
+    },
+    "accentColor": {
+      "label": "Number colour",
+      "description": "Mantine colour for the numbers, for example blue.4 or teal.6. Leave blank for the theme's default text colour.",
+      "control": "text",
+      "default": ""
+    },
+    "labelColor": {
+      "label": "Label colour",
+      "description": "Mantine colour for the small labels and captions. Blank uses dimmed.",
+      "control": "text",
+      "default": "dimmed"
+    }
+  },
+  "template": "<SimpleGrid cols={Number(options.columns||2)} spacing={options.gap===\"0\"?0:(options.gap||\"xs\")} p={options.outerPadding===\"0\"?0:(options.outerPadding||\"xs\")}>\n  {options.showLifetime===false?null:(<Card withBorder={options.cardBorder!==false} radius={options.radius===\"0\"?0:(options.radius||\"md\")} p={options.padding||\"xs\"}><Text size=\"xs\" c={options.labelColor||\"dimmed\"} ta={options.labelAlign===\"center\"?\"center\":(options.labelAlign===\"right\"?\"right\":\"left\")}>{options.labelLifetime||\"Lifetime\"}</Text><Group gap={6} align=\"baseline\" wrap=\"nowrap\" justify={options.valueAlign===\"left\"?\"flex-start\":(options.valueAlign===\"right\"?\"flex-end\":\"center\")}><Title order={Number(options.valueSize||3)} c={options.accentColor||undefined}>{data.kpis.lifetime_species}</Title>{(options.unitLifetime===undefined?\"species\":options.unitLifetime).trim()===\"\"?null:(<Text size=\"xs\" c={options.labelColor||\"dimmed\"} ta={options.labelAlign===\"center\"?\"center\":(options.labelAlign===\"right\"?\"right\":\"left\")}>{options.unitLifetime===undefined?\"species\":options.unitLifetime}</Text>)}</Group></Card>)}\n  {(options.showSpeciesToday===false||options.showTodayCombined===true)?null:(<Card withBorder={options.cardBorder!==false} radius={options.radius===\"0\"?0:(options.radius||\"md\")} p={options.padding||\"xs\"}><Text size=\"xs\" c={options.labelColor||\"dimmed\"} ta={options.labelAlign===\"center\"?\"center\":(options.labelAlign===\"right\"?\"right\":\"left\")}>{options.labelSpeciesToday||\"Today\"}</Text><Group gap={6} align=\"baseline\" wrap=\"nowrap\" justify={options.valueAlign===\"left\"?\"flex-start\":(options.valueAlign===\"right\"?\"flex-end\":\"center\")}><Title order={Number(options.valueSize||3)} c={options.accentColor||undefined}>{[Date.toLocaleDateString(Date.now(),\"en-CA\")].map((t)=>(data.summary||[]).filter((s)=>(s.last_heard||\"\").slice(0,10)===t).length)[0]}</Title>{(options.unitSpeciesToday===undefined?\"species\":options.unitSpeciesToday).trim()===\"\"?null:(<Text size=\"xs\" c={options.labelColor||\"dimmed\"} ta={options.labelAlign===\"center\"?\"center\":(options.labelAlign===\"right\"?\"right\":\"left\")}>{options.unitSpeciesToday===undefined?\"species\":options.unitSpeciesToday}</Text>)}</Group></Card>)}\n  {options.showTodayCombined!==true?null:(<Card withBorder={options.cardBorder!==false} radius={options.radius===\"0\"?0:(options.radius||\"md\")} p={options.padding||\"xs\"}><Text size=\"xs\" c={options.labelColor||\"dimmed\"} ta={options.labelAlign===\"center\"?\"center\":(options.labelAlign===\"right\"?\"right\":\"left\")}>{options.labelTodayCombined||\"Today\"}</Text><Group gap=\"md\" align=\"baseline\" wrap=\"wrap\" justify={options.valueAlign===\"left\"?\"flex-start\":(options.valueAlign===\"right\"?\"flex-end\":\"center\")}><Group gap={6} align=\"baseline\" wrap=\"nowrap\"><Title order={Number(options.valueSize||3)} c={options.accentColor||undefined}>{[Date.toLocaleDateString(Date.now(),\"en-CA\")].map((t)=>(data.summary||[]).filter((s)=>(s.last_heard||\"\").slice(0,10)===t).length)[0]}</Title>{(options.unitSpeciesToday===undefined?\"species\":options.unitSpeciesToday).trim()===\"\"?null:(<Text size=\"xs\" c={options.labelColor||\"dimmed\"} ta={options.labelAlign===\"center\"?\"center\":(options.labelAlign===\"right\"?\"right\":\"left\")}>{options.unitSpeciesToday===undefined?\"species\":options.unitSpeciesToday}</Text>)}</Group><Group gap={6} align=\"baseline\" wrap=\"nowrap\"><Title order={Number(options.valueSize||3)} c={options.accentColor||undefined}>{data.kpis.today_detections}</Title>{(options.unitToday===undefined?\"detections\":options.unitToday).trim()===\"\"?null:(<Text size=\"xs\" c={options.labelColor||\"dimmed\"} ta={options.labelAlign===\"center\"?\"center\":(options.labelAlign===\"right\"?\"right\":\"left\")}>{options.unitToday===undefined?\"detections\":options.unitToday}</Text>)}</Group></Group></Card>)}\n  {options.showNewToday===false?null:(<Card withBorder={options.cardBorder!==false} radius={options.radius===\"0\"?0:(options.radius||\"md\")} p={options.padding||\"xs\"}><Text size=\"xs\" c={options.labelColor||\"dimmed\"} ta={options.labelAlign===\"center\"?\"center\":(options.labelAlign===\"right\"?\"right\":\"left\")}>{options.labelNewToday||\"New today\"}</Text><Group gap={6} align=\"baseline\" wrap=\"nowrap\" justify={options.valueAlign===\"left\"?\"flex-start\":(options.valueAlign===\"right\"?\"flex-end\":\"center\")}><Title order={Number(options.valueSize||3)} c={options.accentColor||undefined}>{[Date.toLocaleDateString(Date.now(),\"en-CA\")].map((t)=>(data.summary||[]).filter((s)=>(s.first_heard||\"\").slice(0,10)===t).length)[0]}</Title>{(options.unitNewToday===undefined?\"species\":options.unitNewToday).trim()===\"\"?null:(<Text size=\"xs\" c={options.labelColor||\"dimmed\"} ta={options.labelAlign===\"center\"?\"center\":(options.labelAlign===\"right\"?\"right\":\"left\")}>{options.unitNewToday===undefined?\"species\":options.unitNewToday}</Text>)}</Group></Card>)}\n  {(options.showToday===false||options.showTodayCombined===true)?null:(<Card withBorder={options.cardBorder!==false} radius={options.radius===\"0\"?0:(options.radius||\"md\")} p={options.padding||\"xs\"}><Text size=\"xs\" c={options.labelColor||\"dimmed\"} ta={options.labelAlign===\"center\"?\"center\":(options.labelAlign===\"right\"?\"right\":\"left\")}>{options.labelToday||\"Today\"}</Text><Group gap={6} align=\"baseline\" wrap=\"nowrap\" justify={options.valueAlign===\"left\"?\"flex-start\":(options.valueAlign===\"right\"?\"flex-end\":\"center\")}><Title order={Number(options.valueSize||3)} c={options.accentColor||undefined}>{data.kpis.today_detections}</Title>{(options.unitToday===undefined?\"detections\":options.unitToday).trim()===\"\"?null:(<Text size=\"xs\" c={options.labelColor||\"dimmed\"} ta={options.labelAlign===\"center\"?\"center\":(options.labelAlign===\"right\"?\"right\":\"left\")}>{options.unitToday===undefined?\"detections\":options.unitToday}</Text>)}</Group></Card>)}\n  {options.showBestDay===false?null:(<Card withBorder={options.cardBorder!==false} radius={options.radius===\"0\"?0:(options.radius||\"md\")} p={options.padding||\"xs\"}><Text size=\"xs\" c={options.labelColor||\"dimmed\"} ta={options.labelAlign===\"center\"?\"center\":(options.labelAlign===\"right\"?\"right\":\"left\")}>{options.labelBestDay||\"Best day\"}</Text><Group gap={6} align=\"baseline\" wrap=\"nowrap\" justify={options.valueAlign===\"left\"?\"flex-start\":(options.valueAlign===\"right\"?\"flex-end\":\"center\")}><Title order={Number(options.valueSize||3)} c={options.accentColor||undefined}>{data.kpis.best_day.count}</Title>{(options.unitBestDay===undefined?\"detections\":options.unitBestDay).trim()===\"\"?null:(<Text size=\"xs\" c={options.labelColor||\"dimmed\"} ta={options.labelAlign===\"center\"?\"center\":(options.labelAlign===\"right\"?\"right\":\"left\")}>{options.unitBestDay===undefined?\"detections\":options.unitBestDay}</Text>)}</Group>{options.showSubCaptions===false?null:(<Text size=\"xs\" c={options.labelColor||\"dimmed\"} ta={options.labelAlign===\"center\"?\"center\":(options.labelAlign===\"right\"?\"right\":\"left\")}>{data.kpis.best_day.date}</Text>)}</Card>)}\n  {options.showStreak===false?null:(<Card withBorder={options.cardBorder!==false} radius={options.radius===\"0\"?0:(options.radius||\"md\")} p={options.padding||\"xs\"}><Text size=\"xs\" c={options.labelColor||\"dimmed\"} ta={options.labelAlign===\"center\"?\"center\":(options.labelAlign===\"right\"?\"right\":\"left\")}>{options.labelStreak||\"Streak\"}</Text><Group gap={6} align=\"baseline\" wrap=\"nowrap\" justify={options.valueAlign===\"left\"?\"flex-start\":(options.valueAlign===\"right\"?\"flex-end\":\"center\")}><Title order={Number(options.valueSize||3)} c={options.accentColor||undefined}>{data.kpis.detection_streak.days}</Title>{(options.unitStreak===undefined?\"days\":options.unitStreak).trim()===\"\"?null:(<Text size=\"xs\" c={options.labelColor||\"dimmed\"} ta={options.labelAlign===\"center\"?\"center\":(options.labelAlign===\"right\"?\"right\":\"left\")}>{options.unitStreak===undefined?\"days\":options.unitStreak}</Text>)}</Group>{options.showSubCaptions===false?null:(<Text size=\"xs\" c={options.labelColor||\"dimmed\"} ta={options.labelAlign===\"center\"?\"center\":(options.labelAlign===\"right\"?\"right\":\"left\")}>since {data.kpis.detection_streak.start_date}</Text>)}</Card>)}\n  {(options.appCategory||\"\").trim()===\"\"?null:[(options.appCategory||\"\").toLowerCase().replaceAll(\" \",\"\")].map((k)=>(data.apps||[]).filter((a)=>(\",\"+(a.description||\"\").toLowerCase().replaceAll(\" \",\"\")+\",\").includes(\",\"+k+\",\")).map((a)=>(<Card key={a.id} withBorder={options.cardBorder!==false} radius={options.radius===\"0\"?0:(options.radius||\"md\")} p={options.padding||\"xs\"}>{(options.appLabel||\"\").trim()===\"\"?null:(<Text size=\"xs\" c={options.labelColor||\"dimmed\"} ta={options.labelAlign===\"center\"?\"center\":(options.labelAlign===\"right\"?\"right\":\"left\")}>{options.appLabel}</Text>)}{a.href?(<Anchor href={a.href} target={options.appOpenInNewTab===false?\"_self\":\"_blank\"} underline=\"never\" c=\"inherit\" display=\"block\"><Stack gap={4} align=\"center\"><Image src={a.iconUrl} alt={a.name} w={28} h={28} fit=\"contain\"/>{(options.showAppName!==false||(options.showAppLinkIcon===true&&options.appOpenInNewTab!==false))?(<Group gap={4} wrap=\"nowrap\" justify=\"center\">{options.showAppName===false?null:(<Text size=\"xs\" fw={700} ta=\"center\" lineClamp={1}>{a.name}</Text>)}{(options.showAppLinkIcon===true&&options.appOpenInNewTab!==false)?(<TablerIcon name=\"external-link\" size=\"0.85em\" stroke={1.75} color=\"#909296\"/>):null}</Group>):null}</Stack></Anchor>):(<Stack gap={4} align=\"center\"><Image src={a.iconUrl} alt={a.name} w={28} h={28} fit=\"contain\"/>{options.showAppName===false?null:(<Text size=\"xs\" fw={700} ta=\"center\" lineClamp={1}>{a.name}</Text>)}</Stack>)}</Card>)))[0]}\n</SimpleGrid>\n"
+}

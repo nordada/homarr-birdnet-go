@@ -1,0 +1,172 @@
+{
+  "$schema": "homarr-custom-widget-v2",
+  "name": "BirdNET Top Species",
+  "description": "Most-detected species with counts, read from BirdNET-Go's analytics API.",
+  "sources": {
+    "default": {
+      "name": "BirdNET-Go",
+      "baseUrl": "http://birdnet-go.local:8080",
+      "networkScope": "private",
+      "auth": "none"
+    }
+  },
+  "requests": {
+    "species": {
+      "path": "/api/v2/analytics/species/summary",
+      "kind": "query",
+      "method": "GET",
+      "trigger": "load",
+      "query": {
+        "limit": 100
+      },
+      "cacheSeconds": 300
+    }
+  },
+  "options": {
+    "sortOrder": {
+      "label": "Order",
+      "description": "Most detected first is the usual top-species list. Least detected first turns the same widget into a rare-sightings tile: the birds heard once or twice. Ties are broken by name so the order does not jump around between refreshes, which matters most at the rare end where many species share a count of 1.",
+      "control": "select",
+      "default": "desc",
+      "choices": [
+        {
+          "label": "Most detected first",
+          "value": "desc"
+        },
+        {
+          "label": "Least detected first",
+          "value": "asc"
+        }
+      ]
+    },
+    "rowLimit": {
+      "label": "Rows to show",
+      "description": "How many species to list. The request asks for up to 100, which covers every species heard so far, so this slices whatever the order above puts at the top.",
+      "control": "select",
+      "default": "10",
+      "choices": [
+        {
+          "label": "3",
+          "value": "3"
+        },
+        {
+          "label": "5",
+          "value": "5"
+        },
+        {
+          "label": "8",
+          "value": "8"
+        },
+        {
+          "label": "10",
+          "value": "10"
+        },
+        {
+          "label": "15",
+          "value": "15"
+        }
+      ]
+    },
+    "outerPadding": {
+      "label": "Padding around the table",
+      "description": "Space between the table and the edge of the tile. Applied to a wrapper rather than to the table itself, so it sits outside the table border rather than pushing the rows away from it. Row height is a separate setting.",
+      "control": "select",
+      "default": "xs",
+      "choices": [
+        {
+          "label": "None",
+          "value": "0"
+        },
+        {
+          "label": "Extra small",
+          "value": "xs"
+        },
+        {
+          "label": "Small",
+          "value": "sm"
+        },
+        {
+          "label": "Medium",
+          "value": "md"
+        }
+      ]
+    },
+    "showCount": {
+      "label": "Show detections",
+      "description": "The number of detections per species. Off leaves a plain ranked list of names.",
+      "control": "switch",
+      "default": true
+    },
+    "showLastHeard": {
+      "label": "Show last heard",
+      "description": "Date each species was last detected. Useful for spotting one that has gone quiet, and the main reason to widen this tile.",
+      "control": "switch",
+      "default": false
+    },
+    "showConfidence": {
+      "label": "Show confidence",
+      "description": "Average confidence per species, as a percentage. A low figure next to a high count is the signature of a misidentification, which is what produced 1338 false Cedar Waxwings in September 2026.",
+      "control": "switch",
+      "default": false
+    },
+    "useScientificName": {
+      "label": "Use scientific names",
+      "description": "Show Sayornis nigricans rather than Black Phoebe.",
+      "control": "switch",
+      "default": false
+    },
+    "striped": {
+      "label": "Striped rows",
+      "description": "Alternating row shading.",
+      "control": "switch",
+      "default": true
+    },
+    "tableBorder": {
+      "label": "Table border",
+      "description": "Outline around the table.",
+      "control": "switch",
+      "default": true
+    },
+    "density": {
+      "label": "Row height",
+      "description": "Vertical spacing in each row. Compact fits more rows into a short tile.",
+      "control": "select",
+      "default": "xs",
+      "choices": [
+        {
+          "label": "Compact",
+          "value": "xs"
+        },
+        {
+          "label": "Normal",
+          "value": "sm"
+        },
+        {
+          "label": "Roomy",
+          "value": "md"
+        }
+      ]
+    },
+    "fontSize": {
+      "label": "Text size",
+      "description": "Size of the table text.",
+      "control": "select",
+      "default": "sm",
+      "choices": [
+        {
+          "label": "Extra small",
+          "value": "xs"
+        },
+        {
+          "label": "Small",
+          "value": "sm"
+        },
+        {
+          "label": "Medium",
+          "value": "md"
+        }
+      ]
+    }
+  },
+  "template": "<Box p={options.outerPadding===\"0\"?0:(options.outerPadding||\"xs\")}>\n  <Table striped={options.striped!==false} withTableBorder={options.tableBorder!==false} verticalSpacing={options.density||\"xs\"} fz={options.fontSize||\"sm\"}>\n    <Table.Thead>\n      <Table.Tr>\n        <Table.Th>Species</Table.Th>\n        {options.showCount===false?null:(<Table.Th>Detections</Table.Th>)}\n        {options.showConfidence===true?(<Table.Th>Confidence</Table.Th>):null}\n        {options.showLastHeard===true?(<Table.Th>Last heard</Table.Th>):null}\n      </Table.Tr>\n    </Table.Thead>\n    <Table.Tbody>\n      {data.species.slice(0).sort((a,b)=>(options.sortOrder===\"asc\"?a.count-b.count:b.count-a.count)||((a.common_name||\"\")<(b.common_name||\"\")?-1:((a.common_name||\"\")>(b.common_name||\"\")?1:0))).slice(0,Number(options.rowLimit||10)).map((row) => (\n        <Table.Tr key={row.species_code}>\n          <Table.Td>{options.useScientificName===true?row.scientific_name:row.common_name}</Table.Td>\n          {options.showCount===false?null:(<Table.Td>{row.count}</Table.Td>)}\n          {options.showConfidence===true?(<Table.Td>{[Number(row.avg_confidence*100).toFixed(0),\"%\"].join(\"\")}</Table.Td>):null}\n          {options.showLastHeard===true?(<Table.Td>{(row.last_heard||\"\").slice(0,10)}</Table.Td>):null}\n        </Table.Tr>\n      ))}\n    </Table.Tbody>\n  </Table>\n</Box>\n"
+}

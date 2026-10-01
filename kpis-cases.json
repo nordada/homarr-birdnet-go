@@ -1,0 +1,900 @@
+{
+ "cases": [
+  {
+   "label": "defaults",
+   "data": {
+    "kpis": {
+     "lifetime_species": 16,
+     "today_detections": 1,
+     "best_day": {
+      "date": "2026-09-22",
+      "count": 296
+     },
+     "detection_streak": {
+      "days": 8,
+      "start_date": "2026-09-21"
+     }
+    }
+   },
+   "options": {}
+  },
+  {
+   "label": "one column",
+   "data": {
+    "kpis": {
+     "lifetime_species": 16,
+     "today_detections": 1,
+     "best_day": {
+      "date": "2026-09-22",
+      "count": 296
+     },
+     "detection_streak": {
+      "days": 8,
+      "start_date": "2026-09-21"
+     }
+    }
+   },
+   "options": {
+    "columns": "1"
+   }
+  },
+  {
+   "label": "four columns, small number",
+   "data": {
+    "kpis": {
+     "lifetime_species": 16,
+     "today_detections": 1,
+     "best_day": {
+      "date": "2026-09-22",
+      "count": 296
+     },
+     "detection_streak": {
+      "days": 8,
+      "start_date": "2026-09-21"
+     }
+    }
+   },
+   "options": {
+    "columns": "4",
+    "valueSize": "5"
+   }
+  },
+  {
+   "label": "captions off",
+   "data": {
+    "kpis": {
+     "lifetime_species": 16,
+     "today_detections": 1,
+     "best_day": {
+      "date": "2026-09-22",
+      "count": 296
+     },
+     "detection_streak": {
+      "days": 8,
+      "start_date": "2026-09-21"
+     }
+    }
+   },
+   "options": {
+    "showSubCaptions": false
+   }
+  },
+  {
+   "label": "only today",
+   "data": {
+    "kpis": {
+     "lifetime_species": 16,
+     "today_detections": 1,
+     "best_day": {
+      "date": "2026-09-22",
+      "count": 296
+     },
+     "detection_streak": {
+      "days": 8,
+      "start_date": "2026-09-21"
+     }
+    }
+   },
+   "options": {
+    "showLifetime": false,
+    "showBestDay": false,
+    "showStreak": false
+   }
+  },
+  {
+   "label": "all stats off",
+   "data": {
+    "kpis": {
+     "lifetime_species": 16,
+     "today_detections": 1,
+     "best_day": {
+      "date": "2026-09-22",
+      "count": 296
+     },
+     "detection_streak": {
+      "days": 8,
+      "start_date": "2026-09-21"
+     }
+    }
+   },
+   "options": {
+    "showLifetime": false,
+    "showToday": false,
+    "showBestDay": false,
+    "showStreak": false
+   }
+  },
+  {
+   "label": "square, no border, accent",
+   "data": {
+    "kpis": {
+     "lifetime_species": 16,
+     "today_detections": 1,
+     "best_day": {
+      "date": "2026-09-22",
+      "count": 296
+     },
+     "detection_streak": {
+      "days": 8,
+      "start_date": "2026-09-21"
+     }
+    }
+   },
+   "options": {
+    "radius": "0",
+    "cardBorder": false,
+    "accentColor": "teal.6",
+    "labelColor": "gray.6"
+   }
+  },
+  {
+   "label": "captions on with both hosts hidden",
+   "data": {
+    "kpis": {
+     "lifetime_species": 16,
+     "today_detections": 1,
+     "best_day": {
+      "date": "2026-09-22",
+      "count": 296
+     },
+     "detection_streak": {
+      "days": 8,
+      "start_date": "2026-09-21"
+     }
+    }
+   },
+   "options": {
+    "showBestDay": false,
+    "showStreak": false,
+    "showSubCaptions": true
+   }
+  },
+  {
+   "label": "zero day",
+   "data": {
+    "kpis": {
+     "lifetime_species": 0,
+     "today_detections": 0,
+     "best_day": {
+      "date": "",
+      "count": 0
+     },
+     "detection_streak": {
+      "days": 0,
+      "start_date": ""
+     }
+    }
+   },
+   "options": {}
+  },
+  {
+   "label": "no outer padding",
+   "data": {
+    "kpis": {
+     "lifetime_species": 16,
+     "today_detections": 1,
+     "best_day": {
+      "date": "2026-09-22",
+      "count": 296
+     },
+     "detection_streak": {
+      "days": 8,
+      "start_date": "2026-09-21"
+     }
+    }
+   },
+   "options": {
+    "outerPadding": "0"
+   }
+  },
+  {
+   "label": "roomy outer padding and gap",
+   "data": {
+    "kpis": {
+     "lifetime_species": 16,
+     "today_detections": 1,
+     "best_day": {
+      "date": "2026-09-22",
+      "count": 296
+     },
+     "detection_streak": {
+      "days": 8,
+      "start_date": "2026-09-21"
+     }
+    }
+   },
+   "options": {
+    "outerPadding": "md",
+    "gap": "md"
+   }
+  },
+  {
+   "label": "padding on, gap off",
+   "data": {
+    "kpis": {
+     "lifetime_species": 16,
+     "today_detections": 1,
+     "best_day": {
+      "date": "2026-09-22",
+      "count": 296
+     },
+     "detection_streak": {
+      "days": 8,
+      "start_date": "2026-09-21"
+     }
+    }
+   },
+   "options": {
+    "outerPadding": "sm",
+    "gap": "0"
+   }
+  },
+  {
+   "label": "summary and apps present, birdnet category, three columns",
+   "data": {
+    "kpis": {
+     "lifetime_species": 16,
+     "today_detections": 210,
+     "best_day": {
+      "date": "2026-09-28",
+      "count": 309
+     },
+     "detection_streak": {
+      "days": 9,
+      "start_date": "2026-09-21"
+     }
+    },
+    "summary": [
+     {
+      "scientific_name": "Calypte costae",
+      "common_name": "Costa's Hummingbird",
+      "count": 210,
+      "first_heard": "2026-09-26T05:41:43-07:00",
+      "last_heard": "2026-09-29T05:29:20-07:00"
+     },
+     {
+      "scientific_name": "Vireo cassinii",
+      "common_name": "Cassin's Vireo",
+      "count": 1,
+      "first_heard": "2026-09-29T07:38:06-07:00",
+      "last_heard": "2026-09-29T07:38:06-07:00"
+     },
+     {
+      "scientific_name": "Sayornis nigricans",
+      "common_name": "Black Phoebe",
+      "count": 224,
+      "first_heard": "2026-09-21T07:36:42-07:00",
+      "last_heard": "2026-09-23T18:47:48-07:00"
+     }
+    ],
+    "apps": [
+     {
+      "id": "app1",
+      "name": "BirdNET-Go",
+      "description": "birdnet, homelab",
+      "iconUrl": "https://example.invalid/birdnet.png",
+      "href": "https://birdnet.example.invalid"
+     },
+     {
+      "id": "app2",
+      "name": "Station without link",
+      "description": "BirdNet",
+      "iconUrl": "https://example.invalid/station.png",
+      "href": ""
+     },
+     {
+      "id": "app3",
+      "name": "Plex",
+      "description": "media",
+      "iconUrl": "https://example.invalid/plex.png",
+      "href": "https://plex.example.invalid"
+     }
+    ]
+   },
+   "options": {
+    "appCategory": "birdnet",
+    "columns": "3"
+   }
+  },
+  {
+   "label": "category set but no app matches",
+   "data": {
+    "kpis": {
+     "lifetime_species": 16,
+     "today_detections": 210,
+     "best_day": {
+      "date": "2026-09-28",
+      "count": 309
+     },
+     "detection_streak": {
+      "days": 9,
+      "start_date": "2026-09-21"
+     }
+    },
+    "summary": [],
+    "apps": [
+     {
+      "id": "app3",
+      "name": "Plex",
+      "description": "media",
+      "iconUrl": "https://example.invalid/plex.png",
+      "href": "https://plex.example.invalid"
+     }
+    ]
+   },
+   "options": {
+    "appCategory": "birdnet"
+   }
+  },
+  {
+   "label": "labels overridden",
+   "data": {
+    "kpis": {
+     "lifetime_species": 16,
+     "today_detections": 210,
+     "best_day": {
+      "date": "2026-09-28",
+      "count": 309
+     },
+     "detection_streak": {
+      "days": 9,
+      "start_date": "2026-09-21"
+     }
+    },
+    "summary": []
+   },
+   "options": {
+    "labelLifetime": "Birds ever",
+    "labelSpeciesToday": "Birds today",
+    "labelNewToday": "First-timers",
+    "labelToday": "Calls today",
+    "labelBestDay": "Record day",
+    "labelStreak": "Run"
+   }
+  },
+  {
+   "label": "labels cleared fall back to defaults",
+   "data": {
+    "kpis": {
+     "lifetime_species": 16,
+     "today_detections": 210,
+     "best_day": {
+      "date": "2026-09-28",
+      "count": 309
+     },
+     "detection_streak": {
+      "days": 9,
+      "start_date": "2026-09-21"
+     }
+    },
+    "summary": []
+   },
+   "options": {
+    "labelLifetime": "",
+    "labelSpeciesToday": "",
+    "labelNewToday": "",
+    "labelToday": "",
+    "labelBestDay": "",
+    "labelStreak": ""
+   }
+  },
+  {
+   "label": "new stats off, apps request absent",
+   "data": {
+    "kpis": {
+     "lifetime_species": 16,
+     "today_detections": 210,
+     "best_day": {
+      "date": "2026-09-28",
+      "count": 309
+     },
+     "detection_streak": {
+      "days": 9,
+      "start_date": "2026-09-21"
+     }
+    }
+   },
+   "options": {
+    "showSpeciesToday": false,
+    "showNewToday": false,
+    "appCategory": "birdnet"
+   }
+  },
+  {
+   "label": "app squares: icon on, new tab on",
+   "data": {
+    "kpis": {
+     "lifetime_species": 16,
+     "today_detections": 210,
+     "best_day": {
+      "date": "2026-09-28",
+      "count": 309
+     },
+     "detection_streak": {
+      "days": 9,
+      "start_date": "2026-09-21"
+     }
+    },
+    "summary": [
+     {
+      "scientific_name": "Calypte costae",
+      "common_name": "Costa's Hummingbird",
+      "count": 210,
+      "first_heard": "2026-09-26T05:41:43-07:00",
+      "last_heard": "2026-09-29T05:29:20-07:00"
+     },
+     {
+      "scientific_name": "Vireo cassinii",
+      "common_name": "Cassin's Vireo",
+      "count": 1,
+      "first_heard": "2026-09-29T07:38:06-07:00",
+      "last_heard": "2026-09-29T07:38:06-07:00"
+     },
+     {
+      "scientific_name": "Sayornis nigricans",
+      "common_name": "Black Phoebe",
+      "count": 224,
+      "first_heard": "2026-09-21T07:36:42-07:00",
+      "last_heard": "2026-09-23T18:47:48-07:00"
+     }
+    ],
+    "apps": [
+     {
+      "id": "app1",
+      "name": "BirdNET-Go",
+      "description": "birdnet, homelab",
+      "iconUrl": "https://example.invalid/birdnet.png",
+      "href": "https://birdnet.example.invalid"
+     },
+     {
+      "id": "app2",
+      "name": "Station without link",
+      "description": "BirdNet",
+      "iconUrl": "https://example.invalid/station.png",
+      "href": ""
+     },
+     {
+      "id": "app3",
+      "name": "Plex",
+      "description": "media",
+      "iconUrl": "https://example.invalid/plex.png",
+      "href": "https://plex.example.invalid"
+     }
+    ]
+   },
+   "options": {
+    "appCategory": "birdnet",
+    "showAppLinkIcon": true
+   }
+  },
+  {
+   "label": "app squares: icon on but new tab off, so no icon",
+   "data": {
+    "kpis": {
+     "lifetime_species": 16,
+     "today_detections": 210,
+     "best_day": {
+      "date": "2026-09-28",
+      "count": 309
+     },
+     "detection_streak": {
+      "days": 9,
+      "start_date": "2026-09-21"
+     }
+    },
+    "summary": [
+     {
+      "scientific_name": "Calypte costae",
+      "common_name": "Costa's Hummingbird",
+      "count": 210,
+      "first_heard": "2026-09-26T05:41:43-07:00",
+      "last_heard": "2026-09-29T05:29:20-07:00"
+     },
+     {
+      "scientific_name": "Vireo cassinii",
+      "common_name": "Cassin's Vireo",
+      "count": 1,
+      "first_heard": "2026-09-29T07:38:06-07:00",
+      "last_heard": "2026-09-29T07:38:06-07:00"
+     },
+     {
+      "scientific_name": "Sayornis nigricans",
+      "common_name": "Black Phoebe",
+      "count": 224,
+      "first_heard": "2026-09-21T07:36:42-07:00",
+      "last_heard": "2026-09-23T18:47:48-07:00"
+     }
+    ],
+    "apps": [
+     {
+      "id": "app1",
+      "name": "BirdNET-Go",
+      "description": "birdnet, homelab",
+      "iconUrl": "https://example.invalid/birdnet.png",
+      "href": "https://birdnet.example.invalid"
+     },
+     {
+      "id": "app2",
+      "name": "Station without link",
+      "description": "BirdNet",
+      "iconUrl": "https://example.invalid/station.png",
+      "href": ""
+     },
+     {
+      "id": "app3",
+      "name": "Plex",
+      "description": "media",
+      "iconUrl": "https://example.invalid/plex.png",
+      "href": "https://plex.example.invalid"
+     }
+    ]
+   },
+   "options": {
+    "appCategory": "birdnet",
+    "showAppLinkIcon": true,
+    "appOpenInNewTab": false
+   }
+  },
+  {
+   "label": "app squares: name hidden, icon off",
+   "data": {
+    "kpis": {
+     "lifetime_species": 16,
+     "today_detections": 210,
+     "best_day": {
+      "date": "2026-09-28",
+      "count": 309
+     },
+     "detection_streak": {
+      "days": 9,
+      "start_date": "2026-09-21"
+     }
+    },
+    "summary": [
+     {
+      "scientific_name": "Calypte costae",
+      "common_name": "Costa's Hummingbird",
+      "count": 210,
+      "first_heard": "2026-09-26T05:41:43-07:00",
+      "last_heard": "2026-09-29T05:29:20-07:00"
+     },
+     {
+      "scientific_name": "Vireo cassinii",
+      "common_name": "Cassin's Vireo",
+      "count": 1,
+      "first_heard": "2026-09-29T07:38:06-07:00",
+      "last_heard": "2026-09-29T07:38:06-07:00"
+     },
+     {
+      "scientific_name": "Sayornis nigricans",
+      "common_name": "Black Phoebe",
+      "count": 224,
+      "first_heard": "2026-09-21T07:36:42-07:00",
+      "last_heard": "2026-09-23T18:47:48-07:00"
+     }
+    ],
+    "apps": [
+     {
+      "id": "app1",
+      "name": "BirdNET-Go",
+      "description": "birdnet, homelab",
+      "iconUrl": "https://example.invalid/birdnet.png",
+      "href": "https://birdnet.example.invalid"
+     },
+     {
+      "id": "app2",
+      "name": "Station without link",
+      "description": "BirdNet",
+      "iconUrl": "https://example.invalid/station.png",
+      "href": ""
+     },
+     {
+      "id": "app3",
+      "name": "Plex",
+      "description": "media",
+      "iconUrl": "https://example.invalid/plex.png",
+      "href": "https://plex.example.invalid"
+     }
+    ]
+   },
+   "options": {
+    "appCategory": "birdnet",
+    "showAppName": false
+   }
+  },
+  {
+   "label": "app squares: name hidden, icon on",
+   "data": {
+    "kpis": {
+     "lifetime_species": 16,
+     "today_detections": 210,
+     "best_day": {
+      "date": "2026-09-28",
+      "count": 309
+     },
+     "detection_streak": {
+      "days": 9,
+      "start_date": "2026-09-21"
+     }
+    },
+    "summary": [
+     {
+      "scientific_name": "Calypte costae",
+      "common_name": "Costa's Hummingbird",
+      "count": 210,
+      "first_heard": "2026-09-26T05:41:43-07:00",
+      "last_heard": "2026-09-29T05:29:20-07:00"
+     },
+     {
+      "scientific_name": "Vireo cassinii",
+      "common_name": "Cassin's Vireo",
+      "count": 1,
+      "first_heard": "2026-09-29T07:38:06-07:00",
+      "last_heard": "2026-09-29T07:38:06-07:00"
+     },
+     {
+      "scientific_name": "Sayornis nigricans",
+      "common_name": "Black Phoebe",
+      "count": 224,
+      "first_heard": "2026-09-21T07:36:42-07:00",
+      "last_heard": "2026-09-23T18:47:48-07:00"
+     }
+    ],
+    "apps": [
+     {
+      "id": "app1",
+      "name": "BirdNET-Go",
+      "description": "birdnet, homelab",
+      "iconUrl": "https://example.invalid/birdnet.png",
+      "href": "https://birdnet.example.invalid"
+     },
+     {
+      "id": "app2",
+      "name": "Station without link",
+      "description": "BirdNet",
+      "iconUrl": "https://example.invalid/station.png",
+      "href": ""
+     },
+     {
+      "id": "app3",
+      "name": "Plex",
+      "description": "media",
+      "iconUrl": "https://example.invalid/plex.png",
+      "href": "https://plex.example.invalid"
+     }
+    ]
+   },
+   "options": {
+    "appCategory": "birdnet",
+    "showAppName": false,
+    "showAppLinkIcon": true
+   }
+  },
+  {
+   "label": "custom units",
+   "data": {
+    "kpis": {
+     "lifetime_species": 16,
+     "today_detections": 1,
+     "best_day": {
+      "date": "2026-09-22",
+      "count": 296
+     },
+     "detection_streak": {
+      "days": 8,
+      "start_date": "2026-09-21"
+     }
+    }
+   },
+   "options": {
+    "unitLifetime": "spp.",
+    "unitToday": "calls",
+    "labelToday": "Calls today"
+   }
+  },
+  {
+   "label": "blank units",
+   "data": {
+    "kpis": {
+     "lifetime_species": 16,
+     "today_detections": 1,
+     "best_day": {
+      "date": "2026-09-22",
+      "count": 296
+     },
+     "detection_streak": {
+      "days": 8,
+      "start_date": "2026-09-21"
+     }
+    }
+   },
+   "options": {
+    "unitLifetime": "",
+    "unitSpeciesToday": "",
+    "unitNewToday": "",
+    "unitToday": "",
+    "unitBestDay": "",
+    "unitStreak": ""
+   }
+  },
+  {
+   "label": "numbers left",
+   "data": {
+    "kpis": {
+     "lifetime_species": 16,
+     "today_detections": 1,
+     "best_day": {
+      "date": "2026-09-22",
+      "count": 296
+     },
+     "detection_streak": {
+      "days": 8,
+      "start_date": "2026-09-21"
+     }
+    }
+   },
+   "options": {
+    "valueAlign": "left"
+   }
+  },
+  {
+   "label": "today combined, busy day",
+   "data": {
+    "kpis": {
+     "lifetime_species": 16,
+     "today_detections": 345,
+     "best_day": {
+      "date": "2026-09-22",
+      "count": 296
+     },
+     "detection_streak": {
+      "days": 8,
+      "start_date": "2026-09-21"
+     }
+    },
+    "summary": [
+     {
+      "last_heard": "2099-01-01",
+      "first_heard": "2020-01-01"
+     }
+    ]
+   },
+   "options": {
+    "showTodayCombined": true,
+    "showStreak": true
+   }
+  },
+  {
+   "label": "today combined, separate switches ignored",
+   "data": {
+    "kpis": {
+     "lifetime_species": 16,
+     "today_detections": 1,
+     "best_day": {
+      "date": "2026-09-22",
+      "count": 296
+     },
+     "detection_streak": {
+      "days": 8,
+      "start_date": "2026-09-21"
+     }
+    }
+   },
+   "options": {
+    "showTodayCombined": true,
+    "showSpeciesToday": true,
+    "showToday": true
+   }
+  },
+  {
+   "label": "labels centred, numbers right",
+   "data": {
+    "kpis": {
+     "lifetime_species": 16,
+     "today_detections": 1,
+     "best_day": {
+      "date": "2026-09-22",
+      "count": 296
+     },
+     "detection_streak": {
+      "days": 8,
+      "start_date": "2026-09-21"
+     }
+    }
+   },
+   "options": {
+    "labelAlign": "center",
+    "valueAlign": "right"
+   }
+  },
+  {
+   "label": "app squares: labelled Station",
+   "data": {
+    "kpis": {
+     "lifetime_species": 16,
+     "today_detections": 210,
+     "best_day": {
+      "date": "2026-09-28",
+      "count": 309
+     },
+     "detection_streak": {
+      "days": 9,
+      "start_date": "2026-09-21"
+     }
+    },
+    "summary": [
+     {
+      "scientific_name": "Calypte costae",
+      "common_name": "Costa's Hummingbird",
+      "count": 210,
+      "first_heard": "2026-09-26T05:41:43-07:00",
+      "last_heard": "2026-09-29T05:29:20-07:00"
+     },
+     {
+      "scientific_name": "Vireo cassinii",
+      "common_name": "Cassin's Vireo",
+      "count": 1,
+      "first_heard": "2026-09-29T07:38:06-07:00",
+      "last_heard": "2026-09-29T07:38:06-07:00"
+     },
+     {
+      "scientific_name": "Sayornis nigricans",
+      "common_name": "Black Phoebe",
+      "count": 224,
+      "first_heard": "2026-09-21T07:36:42-07:00",
+      "last_heard": "2026-09-23T18:47:48-07:00"
+     }
+    ],
+    "apps": [
+     {
+      "id": "app1",
+      "name": "BirdNET-Go",
+      "description": "birdnet, homelab",
+      "iconUrl": "https://example.invalid/birdnet.png",
+      "href": "https://birdnet.example.invalid"
+     },
+     {
+      "id": "app2",
+      "name": "Station without link",
+      "description": "BirdNet",
+      "iconUrl": "https://example.invalid/station.png",
+      "href": ""
+     },
+     {
+      "id": "app3",
+      "name": "Plex",
+      "description": "media",
+      "iconUrl": "https://example.invalid/plex.png",
+      "href": "https://plex.example.invalid"
+     }
+    ]
+   },
+   "options": {
+    "appCategory": "birdnet",
+    "showAppLinkIcon": true,
+    "appLabel": "Station",
+    "labelAlign": "center"
+   }
+  }
+ ]
+}

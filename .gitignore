@@ -1,0 +1,5 @@
+# macOS
+.DS_Store
+
+# sandbox-check working directory (downloaded Homarr source, node_modules)
+.sandbox-check/
