@@ -20,6 +20,18 @@ headline counts, and a top-species table.
    3  Lesser Goldfinch                     438
 ```
 
+Dark, on a themed board:
+
+![Headline counts on a dark themed board](docs/screenshots/kpis-dark.png)
+
+![Top species table on a dark themed board](docs/screenshots/top-species-dark.png)
+
+Light, on stock Homarr:
+
+![Headline counts on stock Homarr in light mode](docs/screenshots/kpis-light.png)
+
+![Top species table on stock Homarr in light mode](docs/screenshots/top-species-light.png)
+
 | File | What it shows |
 | --- | --- |
 | `kpis.json` | Lifetime species, species today, new species today, detections today, best day, current streak, and optional app squares linking your stations |
