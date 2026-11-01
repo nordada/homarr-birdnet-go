@@ -71,7 +71,28 @@ fi
 
 # The interpreter pulls component metadata that imports Mantine purely for
 # types at runtime. Stub them so the bundle stays small and offline.
-for pkg in @mantine/core @mantine/charts @mantine/dates @tabler/icons-react; do
+STUBS="@mantine/core @mantine/charts @mantine/dates @tabler/icons-react"
+
+# Refs that read iconsList from the package, unlike older ones with the names in
+# the source, get the real thing at the version Homarr pins: the proxy stub has
+# no iconsList.default to spread, and an empty list would flag every TablerIcon
+# name as unregistered.
+if grep -q iconsList src/core/tabler-icons.ts 2>/dev/null; then
+  STUBS="@mantine/core @mantine/charts @mantine/dates"
+  TABLER="$(curl -sf "https://raw.githubusercontent.com/homarr-labs/homarr/$REF/package.json" |
+    sed -n 's/.*"@tabler\/icons-react": "\([0-9][^"]*\)".*/\1/p' | head -n 1)"
+  if [ -z "$TABLER" ]; then
+    echo "could not read the @tabler/icons-react version pinned at $REF" >&2
+    exit 1
+  fi
+  if [ "$(node -p "require('./node_modules/@tabler/icons-react/package.json').version" 2>/dev/null)" != "$TABLER" ]; then
+    echo "installing @tabler/icons-react $TABLER"
+    rm -rf node_modules/@tabler/icons-react
+    npm install --silent --no-audit --no-fund --no-save "@tabler/icons-react@$TABLER"
+  fi
+fi
+
+for pkg in $STUBS; do
   mkdir -p "node_modules/$pkg"
   echo '{"name":"stub","version":"0.0.0","main":"index.js"}' > "node_modules/$pkg/package.json"
   echo 'module.exports = new Proxy({}, { get: () => () => null });' > "node_modules/$pkg/index.js"
